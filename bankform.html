@@ -1,0 +1,93 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>American Express</title>
+</head>
+<style>
+    body {background-color:gray}
+    h2 { color:rgb(223, 213, 82);}
+    
+    form {
+    padding: 20px;
+    }
+
+
+
+</style>
+<h2>Get the decision in as little as 30 seconds</h2>
+<body>
+        <script>
+                function validateForm() {
+                var a = document.forms["bankform"]["Full name"].value;
+                var b = document.forms["bankform"]["Name on card"].value;
+                var c = document.forms["bankform"]["Social security number"].value
+                var d = document.forms["bankform"]["total annual income"].value
+                var e = document.forms["bankform"]["home address"].value
+                if (a == null || a == "") {
+                    alert("block must be filled out");
+                    return false;
+                }
+                if ( b == null || b == ""){
+                    alert("please fill");
+                    return false;
+                }
+                    if ( c == null || c == ""){
+                    alert("please fill");
+                    return false;
+                    }
+                    if ( d == null || d == ""){
+                    alert("please fill");
+                    return false;
+                    if ( e == null || e == ""){
+                    alert("please fill");
+                    return false;
+                    }
+
+            }
+        }
+            </script>
+    
+     <form name="bankform" onsubmit="return validateForm()" method="get">
+        PERSONAL INFORMATION<br>
+       <br>
+        <input type ="text" placeholder="Full name" name="Full name"><br>  
+
+   
+        <br>
+        <input type ="text" placeholder="Name on card" name="Name on card"><br>
+
+    <br>
+    <input type="text" placeholder="Email address" name="Email address"><br>
+
+    <br>
+    <input type="text" placeholder="Social security number" name="Social security number"><br>
+
+    <br>
+    <input type="number" placeholder="date of birth"  name ="date of birth"> <br>
+
+
+    <br>
+    <input type="number" placeholder="phone number" name="phone number"><br>
+
+    <br>
+    <input type="text"placeholder="home address" name="home address"><br>
+
+    <br>
+    <input type="text" placeholder="total annual income" name="total annual income"><br>
+
+        <br>
+        <input type="text" placeholder="non-taxable annual income(optional)" name="non-taxable annual income"><br>
+    
+        <br>
+        <input type="text" placeholder="income source" name="income source"><br>
+    
+             <br>   <input type="submit" value="submit"><br>
+
+            </form>
+</body>
+</html>
+</html>
